@@ -9,14 +9,13 @@ def reconstruct_trip(tickets):
     current = d[None]
 
     while current is not None:
-      if current in d.keys():
-        current = d[current]
-        if current is not None:
-          flight.append(current)
-      else:
-        return []
+        if current in d.keys():
+            current = d[current]
+            if current is not None:
+                flight.append(current)
+        else:
+            return []
     return flight
-
 
 
 if __name__ == '__main__':

@@ -9,7 +9,7 @@ def reconstruct_trip(tickets):
     current = d[None]
 
     while current is not None:
-      if current in d:
+      if current in d.keys():
         current = d[current]
         if current is not None:
           flight.append(current)
